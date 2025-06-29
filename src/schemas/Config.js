@@ -68,7 +68,7 @@ const configSchema = new mongoose.Schema({
     messages: {
       welcomeMessage: {
         type: String,
-        default: 'Thank you for creating a ticket. The staff team will respond as soon as possible.'
+        default: 'Thank you for creating a ticket with California State Role-Play Community, The Policy Enforcement Team and/or Support Team will respond as soon as possible. in the meantime, please state a correct email address that you have access to and own, your Timezone, whether you are making a player report, staff report, support request, or general inquiry. For all LEGAL inquiries, please contact the Abacromby9 Studios Legal Team at legal@abacromby9-studios.xyz'
       },
       closeMessage: {
         type: String,
@@ -76,7 +76,7 @@ const configSchema = new mongoose.Schema({
       },
       responseMessage: {
         type: String,
-        default: 'Staff reply:'
+        default: 'P.E.T Member reply:'
       }
     },
     appearance: {
