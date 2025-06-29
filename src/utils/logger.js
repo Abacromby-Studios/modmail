@@ -10,7 +10,7 @@ const myFormat = printf(({ level, message, timestamp }) => {
 const logger = createLogger({
   level: 'info',
   format: combine(
-    timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+    timestamp({ format: 'DD-MM-YYYY HH:mm:ss' }),
     myFormat
   ),
   transports: [
@@ -18,7 +18,7 @@ const logger = createLogger({
     new transports.Console({
       format: combine(
         colorize(),
-        timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+        timestamp({ format: 'MM-DD-YYYY HH:mm:ss' }),
         myFormat
       )
     }),
@@ -27,7 +27,7 @@ const logger = createLogger({
       filename: 'logs/error.log', 
       level: 'error',
       format: combine(
-        timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+        timestamp({ format: 'MM-DD-YYYY HH:mm:ss' }),
         myFormat
       )
     }),
@@ -35,7 +35,7 @@ const logger = createLogger({
     new transports.File({ 
       filename: 'logs/combined.log',
       format: combine(
-        timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+        timestamp({ format: 'MM-DD-YYYY HH:mm:ss' }),
         myFormat
       )
     })
