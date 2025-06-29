@@ -1,7 +1,7 @@
 module.exports = {
   prefix: process.env.PREFIX || '!',
   embedColor: '#5865F2', // Discord Blurple
-  footer: 'Made by Izzy | Coders Planet',
+  footer: 'Made by SEADOOTA/Gk11773399 and Abacromby9 Studios for use by California State Role-Play Community',
   statusMessages: {
     online: 'DM me to create a ticket!',
     idle: 'Watching for new ModMail tickets'
@@ -9,7 +9,7 @@ module.exports = {
   cooldowns: {
     commands: 3, // cooldown in seconds for normal commands
     newTicket: 60, // cooldown in seconds for creating a new ticket
-    ticketMessage: 2, // cooldown in seconds between messages in an existing ticket
+    ticketMessage: 1, // cooldown in seconds between messages in an existing ticket
     staffResponse: 1 // cooldown in seconds for staff responses
   },
   ticketSettings: {
@@ -19,11 +19,11 @@ module.exports = {
     maxOpenTickets: 3, // maximum number of open tickets per user
     autoClose: {
       enabled: true, // automatically close inactive tickets
-      inactiveHours: 72 // close tickets inactive for this many hours
+      inactiveHours: 120 // close tickets inactive for this many hours
     }
   },
   credits: {
-    name: 'Izzy | Coders Planet',
-    website: 'https://discord.gg/codersplanet'
+    name: 'SEADOOTA/Gk11773399 | Chief Executive Officer at Abacromby9 Studios',
+    website: 'https://California-State-Role-Play-Community.abacromby-studios.xyz'
   }
 }; 
